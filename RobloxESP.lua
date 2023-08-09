@@ -16,7 +16,7 @@ local function CreateESP(Name,Part,Size)
     esplabelfr.Name = "esplabelfr"
     esplabelfr.Size = UDim2.new(1, 0, 0, 70)
     esplabelfr.BackgroundColor3 = Color3.new(0, 0, 0)
-    esplabelfr.TextColor3 = Color3.fromRGB(_G.Color)
+    esplabelfr.TextColor3 = Color3.fromRGB(255,255,255)
     esplabelfr.BackgroundTransparency = 1
     esplabelfr.TextStrokeTransparency = 0
     esplabelfr.TextStrokeColor3 = Color3.new(0, 0, 0)

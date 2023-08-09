@@ -46,6 +46,3 @@ local function CreateESP(Name,Part,Size,Color)
 
     RunService.RenderStepped:Connect(updateesplabelfr)
 end
-
-_G.Color = Color3.fromRGB(255,255,255)
-CreateESP("PartName" , game.Workspace.Part , 10)

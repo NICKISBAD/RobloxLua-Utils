@@ -1,4 +1,4 @@
-local function CreateESP(Name,Part,Size,Color)
+local function CreateESP(Name,Part,Size)
     local RunService = game:GetService("RunService")
     local player = game.Players.LocalPlayer
     local camera = game:GetService("Workspace").CurrentCamera

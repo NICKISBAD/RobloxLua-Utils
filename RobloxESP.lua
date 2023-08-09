@@ -1,6 +1,5 @@
-local RunService = game:GetService("RunService")
-
-local function CreateESP(Name,Part,Size)
+local function CreateESP(Name,Part,Size,Color)
+    local RunService = game:GetService("RunService")
     local player = game.Players.LocalPlayer
     local camera = game:GetService("Workspace").CurrentCamera
 
@@ -17,7 +16,7 @@ local function CreateESP(Name,Part,Size)
     esplabelfr.Name = "esplabelfr"
     esplabelfr.Size = UDim2.new(1, 0, 0, 70)
     esplabelfr.BackgroundColor3 = Color3.new(0, 0, 0)
-    esplabelfr.TextColor3 = Color3.fromRGB(255,255,255)
+    esplabelfr.TextColor3 = Color3.fromRGB(_G.Color)
     esplabelfr.BackgroundTransparency = 1
     esplabelfr.TextStrokeTransparency = 0
     esplabelfr.TextStrokeColor3 = Color3.new(0, 0, 0)
@@ -48,4 +47,5 @@ local function CreateESP(Name,Part,Size)
     RunService.RenderStepped:Connect(updateesplabelfr)
 end
 
+_G.Color = Color3.fromRGB(255,255,255)
 CreateESP("PartName" , game.Workspace.Part , 10)
